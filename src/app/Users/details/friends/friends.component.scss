@@ -1,0 +1,20 @@
+.users {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .list-item {
+    width: 25%;
+    display: block;
+
+    cursor: pointer;
+
+    .list-item-content {
+      margin: 10px;
+      border: 1px solid #ccc;
+      div {
+        padding: 10px;
+      }
+    }
+  }
+}

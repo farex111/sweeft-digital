@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="header-wrap">
+    <header *ngIf="fulluser$ | async as fulluser">
+      <img [src]="fulluser.imageUrl" alt="" />
+      <div class="left-section">
+        <ul>
+          <span>info</span>
+          <li><h2>{{fulluser.jobDescriptor}}</h2></li>
+          <li><small>{{fulluser.title}}</small></li>
+          <br>
+          <li><p>Email: {{fulluser.email}}</p></li>
+          <li><p>IP Adress: {{fulluser.ip}}</p></li>
+          <li><p>Job Area: {{fulluser.jobArea}}</p></li>
+          <li><p>Job Type: {{fulluser.jobType}}</p></li>
+        </ul>
+      </div>
+      <div class="right-section">
+        <ul>
+          <span>adress</span>
+          <li><h2>{{fulluser.company.name}}</h2></li>
+          <li><small>{{fulluser.company.suffix}}</small></li>
+          <br>
+          <li><p>City: {{fulluser.address.city}}</p></li>
+          <li><p>Country: {{fulluser.address.country}}</p></li>
+          <li><p>State: {{fulluser.address.state}}</p></li>
+          <li><p>ZIP: {{fulluser.address.zipCode}}</p></li>
+        </ul>
+      </div>
+    </header>
+    <div>
+      <h2>friends</h2>
+      <div class="users">
+        <app-friends></app-friends>
+      </div>
+    </div>
+  </div>
+</div>

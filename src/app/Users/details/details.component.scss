@@ -1,0 +1,22 @@
+.header-wrap {
+  border: 1px solid #ccc;
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    img {
+      height: 200px;
+    }
+    .left-section {
+      margin-left: 20px;
+      width: 100%;
+      border: 2px solid #ccc;
+    }
+    .right-section {
+      margin-left: 20px;
+      width: 40%;
+      border: 2px solid #ccc;
+    }
+  }
+}
